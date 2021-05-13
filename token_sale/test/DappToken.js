@@ -1,4 +1,4 @@
-const DappToken = artifacts.require("DappToken");
+const DappToken = artifacts.require("./DappToken.sol");
 
 contract('DappToken', function(accounts) {
     it('sets the total supply upon deployment', function() {

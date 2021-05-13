@@ -23,15 +23,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/samwwong/Desktop/token_sale/contracts/DappToken.sol\":\"DappToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/samwwong/Desktop/token_sale/contracts/DappToken.sol\":{\"keccak256\":\"0xc6c878e3da199d3361997a6435b4a9891e8a4331d63be23c20326f5ef8cecfb6\",\"urls\":[\"bzz-raw://ec3560f6cfcc5eb0bc324993e0d1156b59631cd780e9517e75f1cce474e01c1e\",\"dweb:/ipfs/QmczvvjaEwmw7V6FQeAKcWepUNawbJmZUMuFbauh6JWRY5\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50620f42406000819055506084806100286000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a7231582060c84db36cc6c0bfc99b59d2aa2b5989d8decd8ea9e45d6d2199d973654d4efb64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a7231582060c84db36cc6c0bfc99b59d2aa2b5989d8decd8ea9e45d6d2199d973654d4efb64736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappToken.sol\":\"DappToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappToken.sol\":{\"keccak256\":\"0xc6c878e3da199d3361997a6435b4a9891e8a4331d63be23c20326f5ef8cecfb6\",\"urls\":[\"bzz-raw://ec3560f6cfcc5eb0bc324993e0d1156b59631cd780e9517e75f1cce474e01c1e\",\"dweb:/ipfs/QmczvvjaEwmw7V6FQeAKcWepUNawbJmZUMuFbauh6JWRY5\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50620f42406000819055506084806100286000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820af2d9bf44125cd70e7c4ec0ad2d7e2dcd80b04d639986b623a861cc4797600df64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820af2d9bf44125cd70e7c4ec0ad2d7e2dcd80b04d639986b623a861cc4797600df64736f6c63430005100032",
   "sourceMap": "34:216:0:-;;;188:60;8:9:-1;5:2;;;30:1;27;20:12;5:2;188:60:0;233:7;219:11;:21;;;;34:216;;;;;;",
   "deployedSourceMap": "34:216:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:216:0;;;;;;;;;;;;;;;;;;;155:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity >=0.4.22 <0.9.0;\n\ncontract DappToken {\n    // Constructor\n    // Set the total number of tokens\n    // Read the total number of tokens\n    uint256 public totalSupply;\n\n    constructor() public {\n        totalSupply = 1000000;\n\n    }\n}",
-  "sourcePath": "/Users/samwwong/Desktop/token_sale/contracts/DappToken.sol",
+  "sourcePath": "/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappToken.sol",
   "ast": {
-    "absolutePath": "/Users/samwwong/Desktop/token_sale/contracts/DappToken.sol",
+    "absolutePath": "/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappToken.sol",
     "exportedSymbols": {
       "DappToken": [
         12
@@ -186,7 +186,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/samwwong/Desktop/token_sale/contracts/DappToken.sol",
+      "absolutePath": "/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappToken.sol",
       "exportedSymbols": {
         "DappToken": [
           12
@@ -381,8 +381,7 @@
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-05-13T01:24:04.368Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-05-13T02:37:46.037Z",
   "devdoc": {
     "methods": {}
   },
