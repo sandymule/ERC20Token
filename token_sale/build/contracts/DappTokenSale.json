@@ -7,6 +7,11 @@
           "internalType": "contract DappToken",
           "name": "_tokenContract",
           "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenPrice",
+          "type": "uint256"
         }
       ],
       "payable": false,
@@ -27,23 +32,38 @@
       "payable": false,
       "stateMutability": "view",
       "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract DappToken\",\"name\":\"_tokenContract\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract DappToken\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappTokenSale.sol\":\"DappTokenSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappToken.sol\":{\"keccak256\":\"0x63be0dc902b352873dc22bfffb6414294df9904ed24a79e8363ee41cc745e378\",\"urls\":[\"bzz-raw://0cffe81af0458a9d410a75bdc7f71d88d9d9981dde7fa29ba5eb6aac65dac19c\",\"dweb:/ipfs/QmWjFmHhjX6kWpXatrkQoRpP55GTgV73mYdDXa9TX8paD6\"]},\"/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappTokenSale.sol\":{\"keccak256\":\"0x2a0715d01751b52cc9ee5f3736c9c42419a68a89434b8766f797197e21f16904\",\"urls\":[\"bzz-raw://82023cd3ca83b85ed2f78eed49305092220098cf5a44ee767ed4c6592c402daf\",\"dweb:/ipfs/QmX9Cc2XtYTEAaGiMQ73xLdHxWFYAz3iCJ6bwUEgA2V6Cv\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516101a43803806101a48339818101604052602081101561003357600080fd5b8101908080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060d0806100d46000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806355a373d614602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158208b06818bf12e3fcc6e148fc66378a4b320060ee3ecd189617cf7323276ea6f7464736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806355a373d614602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158208b06818bf12e3fcc6e148fc66378a4b320060ee3ecd189617cf7323276ea6f7464736f6c63430005100032",
-  "sourceMap": "61:256:1:-;;;146:169;8:9:-1;5:2;;;30:1;27;20:12;5:2;146:169:1;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;146:169:1;;;;;;;;;;;;;;;;209:10;201:5;;:18;;;;;;;;;;;;;;;;;;245:14;229:13;;:30;;;;;;;;;;;;;;;;;;146:169;61:256;;;;;;",
-  "deployedSourceMap": "61:256:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:256:1;;;;;;;;;;;;;;;;;;;109:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.4.22 <0.9.0;\n\nimport \"./DappToken.sol\";\n\ncontract DappTokenSale {\n    address admin;\n    DappToken public tokenContract;\n\n    constructor(DappToken _tokenContract) public {\n        admin = msg.sender;\n        tokenContract = _tokenContract;\n        // Token Contract\n        // Token Price\n    }\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract DappToken\",\"name\":\"_tokenContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenPrice\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract DappToken\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappTokenSale.sol\":\"DappTokenSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappToken.sol\":{\"keccak256\":\"0x63be0dc902b352873dc22bfffb6414294df9904ed24a79e8363ee41cc745e378\",\"urls\":[\"bzz-raw://0cffe81af0458a9d410a75bdc7f71d88d9d9981dde7fa29ba5eb6aac65dac19c\",\"dweb:/ipfs/QmWjFmHhjX6kWpXatrkQoRpP55GTgV73mYdDXa9TX8paD6\"]},\"/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappTokenSale.sol\":{\"keccak256\":\"0xf4b0f4bc9683514a373be86140beedd8fee3e136b26f726a4c2235fc07cd71ec\",\"urls\":[\"bzz-raw://22e84f131d2ba3f360dea61c2f383b6e2723b96239787e3c9275a79aea8dc4e7\",\"dweb:/ipfs/QmVkxWH4w9YizHoUnEuSJ9xqUeuLR3wcFswP7SwZxdQfvP\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101e23803806101e28339818101604052604081101561003357600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600281905550505060fc806100e66000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806355a373d61460375780637ff9b59614607f575b600080fd5b603d609b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b608560c1565b6040518082815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6002548156fea265627a7a72315820d8ad2dd1eafd3a169d96f975c99e67d4a82df603ff76f63c2e4f5283661de95864736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806355a373d61460375780637ff9b59614607f575b600080fd5b603d609b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b608560c1565b6040518082815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6002548156fea265627a7a72315820d8ad2dd1eafd3a169d96f975c99e67d4a82df603ff76f63c2e4f5283661de95864736f6c63430005100032",
+  "sourceMap": "61:293:1:-;;;177:175;8:9:-1;5:2;;;30:1;27;20:12;5:2;177:175:1;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;177:175:1;;;;;;;;;;;;;;;;;;;;;;;;;261:10;253:5;;:18;;;;;;;;;;;;;;;;;;297:14;281:13;;:30;;;;;;;;;;;;;;;;;;334:11;321:10;:24;;;;177:175;;61:293;;;;;;",
+  "deployedSourceMap": "61:293:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:293:1;;;;;;;;;;;;;;;;;;;;;;;;109:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;145:25;;;:::i;:::-;;;;;;;;;;;;;;;;;;;109:30;;;;;;;;;;;;;:::o;145:25::-;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\n\nimport \"./DappToken.sol\";\n\ncontract DappTokenSale {\n    address admin;\n    DappToken public tokenContract;\n    uint256 public tokenPrice;\n\n    constructor(DappToken _tokenContract, uint256 _tokenPrice) public {\n        admin = msg.sender;\n        tokenContract = _tokenContract;\n        tokenPrice = _tokenPrice;\n    }\n}\n",
   "sourcePath": "/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappTokenSale.sol",
   "ast": {
     "absolutePath": "/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappTokenSale.sol",
     "exportedSymbols": {
       "DappTokenSale": [
-        208
+        216
       ]
     },
-    "id": 209,
+    "id": 217,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -65,7 +85,7 @@
         "file": "./DappToken.sol",
         "id": 188,
         "nodeType": "ImportDirective",
-        "scope": 209,
+        "scope": 217,
         "sourceUnit": 186,
         "src": "34:25:1",
         "symbolAliases": [],
@@ -77,9 +97,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 208,
+        "id": 216,
         "linearizedBaseContracts": [
-          208
+          216
         ],
         "name": "DappTokenSale",
         "nodeType": "ContractDefinition",
@@ -89,7 +109,7 @@
             "id": 190,
             "name": "admin",
             "nodeType": "VariableDeclaration",
-            "scope": 208,
+            "scope": 216,
             "src": "90:13:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -116,7 +136,7 @@
             "id": 192,
             "name": "tokenContract",
             "nodeType": "VariableDeclaration",
-            "scope": 208,
+            "scope": 216,
             "src": "109:30:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -140,27 +160,53 @@
             "visibility": "public"
           },
           {
+            "constant": false,
+            "id": 194,
+            "name": "tokenPrice",
+            "nodeType": "VariableDeclaration",
+            "scope": 216,
+            "src": "145:25:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 193,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "145:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
             "body": {
-              "id": 206,
+              "id": 214,
               "nodeType": "Block",
-              "src": "191:124:1",
+              "src": "243:109:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 200,
+                    "id": 204,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 197,
+                      "id": 201,
                       "name": "admin",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 190,
-                      "src": "201:5:1",
+                      "src": "253:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -172,18 +218,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 198,
+                        "id": 202,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 223,
-                        "src": "209:3:1",
+                        "referencedDeclaration": 231,
+                        "src": "261:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 199,
+                      "id": 203,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -191,38 +237,38 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "209:10:1",
+                      "src": "261:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
                         "typeString": "address payable"
                       }
                     },
-                    "src": "201:18:1",
+                    "src": "253:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 201,
+                  "id": 205,
                   "nodeType": "ExpressionStatement",
-                  "src": "201:18:1"
+                  "src": "253:18:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 204,
+                    "id": 208,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 202,
+                      "id": 206,
                       "name": "tokenContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 192,
-                      "src": "229:13:1",
+                      "src": "281:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_DappToken_$185",
                         "typeString": "contract DappToken"
@@ -232,47 +278,93 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 203,
+                      "id": 207,
                       "name": "_tokenContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 194,
-                      "src": "245:14:1",
+                      "referencedDeclaration": 196,
+                      "src": "297:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_DappToken_$185",
                         "typeString": "contract DappToken"
                       }
                     },
-                    "src": "229:30:1",
+                    "src": "281:30:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_DappToken_$185",
                       "typeString": "contract DappToken"
                     }
                   },
-                  "id": 205,
+                  "id": 209,
                   "nodeType": "ExpressionStatement",
-                  "src": "229:30:1"
+                  "src": "281:30:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 212,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 210,
+                      "name": "tokenPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 194,
+                      "src": "321:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 211,
+                      "name": "_tokenPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 198,
+                      "src": "334:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "321:24:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 213,
+                  "nodeType": "ExpressionStatement",
+                  "src": "321:24:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 207,
+            "id": 215,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 195,
+              "id": 199,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 194,
+                  "id": 196,
                   "name": "_tokenContract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 207,
-                  "src": "158:24:1",
+                  "scope": 215,
+                  "src": "189:24:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -281,11 +373,11 @@
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 193,
+                    "id": 195,
                     "name": "DappToken",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 185,
-                    "src": "158:9:1",
+                    "src": "189:9:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_DappToken_$185",
                       "typeString": "contract DappToken"
@@ -293,35 +385,61 @@
                   },
                   "value": null,
                   "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 198,
+                  "name": "_tokenPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 215,
+                  "src": "215:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 197,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "215:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
                 }
               ],
-              "src": "157:26:1"
+              "src": "188:47:1"
             },
             "returnParameters": {
-              "id": 196,
+              "id": 200,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "191:0:1"
+              "src": "243:0:1"
             },
-            "scope": 208,
-            "src": "146:169:1",
+            "scope": 216,
+            "src": "177:175:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 209,
-        "src": "61:256:1"
+        "scope": 217,
+        "src": "61:293:1"
       }
     ],
-    "src": "0:318:1"
+    "src": "0:355:1"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappTokenSale.sol",
       "exportedSymbols": {
         "DappTokenSale": [
-          208
+          216
         ]
       }
     },
@@ -347,7 +465,7 @@
           "SourceUnit": 186,
           "absolutePath": "/Users/samwwong/Desktop/ERC20Token/token_sale/contracts/DappToken.sol",
           "file": "./DappToken.sol",
-          "scope": 209,
+          "scope": 217,
           "symbolAliases": [
             null
           ],
@@ -369,17 +487,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            208
+            216
           ],
           "name": "DappTokenSale",
-          "scope": 209
+          "scope": 217
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "admin",
-              "scope": 208,
+              "scope": 216,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -406,7 +524,7 @@
             "attributes": {
               "constant": false,
               "name": "tokenContract",
-              "scope": 208,
+              "scope": 216,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract DappToken",
@@ -432,6 +550,32 @@
           },
           {
             "attributes": {
+              "constant": false,
+              "name": "tokenPrice",
+              "scope": 216,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 193,
+                "name": "ElementaryTypeName",
+                "src": "145:7:1"
+              }
+            ],
+            "id": 194,
+            "name": "VariableDeclaration",
+            "src": "145:25:1"
+          },
+          {
+            "attributes": {
               "documentation": null,
               "implemented": true,
               "isConstructor": true,
@@ -440,7 +584,7 @@
                 null
               ],
               "name": "",
-              "scope": 208,
+              "scope": 216,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -452,7 +596,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_tokenContract",
-                      "scope": 207,
+                      "scope": 215,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "contract DappToken",
@@ -467,19 +611,45 @@
                           "referencedDeclaration": 185,
                           "type": "contract DappToken"
                         },
-                        "id": 193,
+                        "id": 195,
                         "name": "UserDefinedTypeName",
-                        "src": "158:9:1"
+                        "src": "189:9:1"
                       }
                     ],
-                    "id": 194,
+                    "id": 196,
                     "name": "VariableDeclaration",
-                    "src": "158:24:1"
+                    "src": "189:24:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenPrice",
+                      "scope": 215,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 197,
+                        "name": "ElementaryTypeName",
+                        "src": "215:7:1"
+                      }
+                    ],
+                    "id": 198,
+                    "name": "VariableDeclaration",
+                    "src": "215:19:1"
                   }
                 ],
-                "id": 195,
+                "id": 199,
                 "name": "ParameterList",
-                "src": "157:26:1"
+                "src": "188:47:1"
               },
               {
                 "attributes": {
@@ -488,9 +658,9 @@
                   ]
                 },
                 "children": [],
-                "id": 196,
+                "id": 200,
                 "name": "ParameterList",
-                "src": "191:0:1"
+                "src": "243:0:1"
               },
               {
                 "children": [
@@ -517,9 +687,9 @@
                               "type": "address",
                               "value": "admin"
                             },
-                            "id": 197,
+                            "id": 201,
                             "name": "Identifier",
-                            "src": "201:5:1"
+                            "src": "253:5:1"
                           },
                           {
                             "attributes": {
@@ -539,28 +709,28 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 223,
+                                  "referencedDeclaration": 231,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 198,
+                                "id": 202,
                                 "name": "Identifier",
-                                "src": "209:3:1"
+                                "src": "261:3:1"
                               }
                             ],
-                            "id": 199,
+                            "id": 203,
                             "name": "MemberAccess",
-                            "src": "209:10:1"
+                            "src": "261:10:1"
                           }
                         ],
-                        "id": 200,
+                        "id": 204,
                         "name": "Assignment",
-                        "src": "201:18:1"
+                        "src": "253:18:1"
                       }
                     ],
-                    "id": 201,
+                    "id": 205,
                     "name": "ExpressionStatement",
-                    "src": "201:18:1"
+                    "src": "253:18:1"
                   },
                   {
                     "children": [
@@ -585,9 +755,9 @@
                               "type": "contract DappToken",
                               "value": "tokenContract"
                             },
-                            "id": 202,
+                            "id": 206,
                             "name": "Identifier",
-                            "src": "229:13:1"
+                            "src": "281:13:1"
                           },
                           {
                             "attributes": {
@@ -595,51 +765,109 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 194,
+                              "referencedDeclaration": 196,
                               "type": "contract DappToken",
                               "value": "_tokenContract"
                             },
-                            "id": 203,
+                            "id": 207,
                             "name": "Identifier",
-                            "src": "245:14:1"
+                            "src": "297:14:1"
                           }
                         ],
-                        "id": 204,
+                        "id": 208,
                         "name": "Assignment",
-                        "src": "229:30:1"
+                        "src": "281:30:1"
                       }
                     ],
-                    "id": 205,
+                    "id": 209,
                     "name": "ExpressionStatement",
-                    "src": "229:30:1"
+                    "src": "281:30:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 194,
+                              "type": "uint256",
+                              "value": "tokenPrice"
+                            },
+                            "id": 210,
+                            "name": "Identifier",
+                            "src": "321:10:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 198,
+                              "type": "uint256",
+                              "value": "_tokenPrice"
+                            },
+                            "id": 211,
+                            "name": "Identifier",
+                            "src": "334:11:1"
+                          }
+                        ],
+                        "id": 212,
+                        "name": "Assignment",
+                        "src": "321:24:1"
+                      }
+                    ],
+                    "id": 213,
+                    "name": "ExpressionStatement",
+                    "src": "321:24:1"
                   }
                 ],
-                "id": 206,
+                "id": 214,
                 "name": "Block",
-                "src": "191:124:1"
+                "src": "243:109:1"
               }
             ],
-            "id": 207,
+            "id": 215,
             "name": "FunctionDefinition",
-            "src": "146:169:1"
+            "src": "177:175:1"
           }
         ],
-        "id": 208,
+        "id": 216,
         "name": "ContractDefinition",
-        "src": "61:256:1"
+        "src": "61:293:1"
       }
     ],
-    "id": 209,
+    "id": 217,
     "name": "SourceUnit",
-    "src": "0:318:1"
+    "src": "0:355:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x87e1dEE3474F84e49e55D22eCE21dbD862abaD70",
+      "transactionHash": "0x0c6716b4d78fea12747e02fa08aed231367439150e3e1b335a69e1770a28f612"
+    }
+  },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-05-14T06:51:48.174Z",
+  "updatedAt": "2021-05-16T04:18:39.725Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
